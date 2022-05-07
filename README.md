@@ -1,2 +1,15 @@
-# LINE-BOT
- LINE bot can send to users at any time. Reply messages are messages that your bot sends in response to users' messages.
+LINE bot
+===============
+
+## Technology 
+ * [LINE account](https://line.me/en/)
+ * [Python](https://www.python.org/downloads/) 
+ * [Flask](https://flask.palletsprojects.com/en/2.1.x/)
+ * [ngrok](https://ngrok.com/)
+ * [Heroku](https://www.heroku.com/)
+
+ ## Installation 
+
+    $ pip install line-bot-sdk
+
+
