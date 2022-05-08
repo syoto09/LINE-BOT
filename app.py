@@ -43,7 +43,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if event.message.txt == "Thank you":
-        reply_message = "NO Proble"
+        reply_message = "No problem"
     else:
         reply_message = f"You sent {event.message.txt}"
 
