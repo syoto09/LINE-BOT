@@ -12,9 +12,10 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
-handler = WebhookHandler('YOUR_CHANNEL_SECRET')
-
+line_bot_api = LineBotApi('Channel_access_token')
+handler = WebhookHandler('Channel_secret')
+    # Channel_access_token
+    # Channel_secret
 @app.route("/")
 def test():
      return "Okay"
@@ -41,10 +42,16 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    if event.message.txt == "Thank you":
+        reply_message = "NO Proble"
+    else:
+        reply_message = f"You sent {event.message.txt}"
+
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=reply_message))
 
+   
 
 if __name__ == "__main__":
     app.run()
