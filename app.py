@@ -45,8 +45,8 @@ def handle_message(event):
     if event.message.txt == "Thank you":
         reply_message = "No problem"
     else:
-        reply_message = f"You sent {event.message.txt}"
-
+        reply_message = f"You sent {event.message.txt}."
+    
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply_message))

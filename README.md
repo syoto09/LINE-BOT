@@ -13,7 +13,9 @@ LINE bot
     $ pip install line-bot-sdk
 
 
-## The initial version
+### @app.route("/callback") 
  1 - If you sent the message to my bot, my bot will send your message back  to you
 
  2 - If you sent "Thank you" to my bot, my bot reply "No problem" 
+
+ 
