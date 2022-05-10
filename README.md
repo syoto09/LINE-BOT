@@ -6,11 +6,21 @@ LINE bot
  * [Python](https://www.python.org/downloads/) 
  * [Flask](https://flask.palletsprojects.com/en/2.1.x/)
  * [ngrok](https://ngrok.com/)
- * [Heroku](https://www.heroku.com/)
 
- ## Installation 
+### 1, Create LINE channels
+
+
+### 2, Construnc the environment 
+
 
     $ pip install line-bot-sdk
+    $ pip install flask 
+### 3, Implement the bot program  [Reference](https://github.com/line/line-bot-sdk-python)
+
+### 4, Excute Flask and ngrok
+    $ flask run 
+    ./ngrok http 5000
+
 
 
 ### @app.route("/callback") 
